@@ -17,4 +17,4 @@ heroku open
 ```
 
 ## Demo
-https://evening-woodland-12496.herokuapp.com/
+https://zipwhipcontacts.herokuapp.com/

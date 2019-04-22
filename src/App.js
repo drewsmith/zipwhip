@@ -111,8 +111,8 @@ class UploadForm extends Component {
     });
   }
 
-  handleFileChange = ({ target = {} }) => {
-    let { files = [] } = target;
+  handleFileChange = (e) => {
+    let { files = [] } = this.uploadFile;
     let filename = files[0].name;
     if (!this.isFileValid(filename)) {
       this.setState({ error: 'Invalid file. Only CSV files are allowed.' });
@@ -129,11 +129,7 @@ class UploadForm extends Component {
   }
 
   render() {
-    let { 
-      fileUploadText,
-      error,
-      content
-    } = this.state;
+    let { fileUploadText, error, content } = this.state;
     return (
       <Container>
         <Header><h1>ZipWhip</h1></Header>
